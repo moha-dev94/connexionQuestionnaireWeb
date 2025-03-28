@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Réinitialisation du mot de passe</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Réinitialisation du mot de passe</h2>
+        <div id="alert-box" class="alert"></div>
+
+        <form id="reset-password-form">
+            <input type="hidden" name="token" id="token">
+            <label for="password">Nouveau mot de passe :</label>
+            <input type="password" name="password" required>
+            <label for="confirm_password">Confirmez le mot de passe :</label>
+            <input type="password" name="confirm_password" required>
+            <button type="submit">Modifier le mot de passe</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("token").value = new URLSearchParams(window.location.search).get("token");
+
+        document.getElementById("reset-password-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            let formData = new FormData(this);
+
+            fetch("../php/reinitMdp.php", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                let alertBox = document.getElementById("alert-box");
+                alertBox.innerHTML = data.message;
+                alertBox.style.display = "block";
+                alertBox.className = data.status === "error" ? "alert error" : "alert success";
+            })
+            .catch(error => console.error("Erreur :", error));
+        });
+    </script>
+</body>
+</html>

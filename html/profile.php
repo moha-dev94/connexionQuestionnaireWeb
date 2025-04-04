@@ -33,6 +33,7 @@ if (!$user) {
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <?php include 'navbar.php'; ?>
     <div class="container">
         <h2>Modifier le profil</h2>
         <form method="POST" action="dashboard.php">

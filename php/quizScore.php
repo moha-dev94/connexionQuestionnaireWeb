@@ -75,6 +75,7 @@ try {
     </style>
 </head>
 <body>
+    <?php include '../HTML/navbar.php'; ?>
 <div class="container">
     <h2>Historique des réponses</h2>
 

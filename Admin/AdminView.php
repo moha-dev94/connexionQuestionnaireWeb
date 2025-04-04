@@ -30,28 +30,10 @@ $groupes = $groupQuery->fetchAll(PDO::FETCH_ASSOC);
 <head>
     <meta charset="UTF-8">
     <title>Gestion des utilisateurs</title>
-    <style>
-        body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px; text-align: center; }
-        h2 { color: #0a3d62; }
-        table { width: 80%; margin: 20px auto; border-collapse: collapse; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
-        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
-        th { background: #0a3d62; color: white; }
-        tr:hover { background: #ecf0f1; }
-        td a { text-decoration: none; color: #e74c3c; font-weight: bold; }
-        td a:hover { color: #c0392b; }
-        .admin { color: green; font-weight: bold; }
-        .user { color: blue; font-weight: bold; }
-        .success { background-color: #2ecc71; color: white; padding: 10px; border-radius: 5px; font-weight: bold; text-align: center; margin-bottom: 15px; }
-        .form-container { margin-top: 20px; padding: 20px; background: #fff; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: left; width: 50%; margin: 20px auto; }
-        input, select { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px; }
-        .btn-submit { margin-top: 10px; padding: 10px; background-color: #16a085; color: white; border: none; border-radius: 5px; font-size: 18px; cursor: pointer; width: 100%; }
-        .btn-submit:hover { background-color: #138d75; }
-        button { background-color: #28a745; color: white; padding: 10px; border: none; border-radius: 4px; cursor: pointer; width: 80%; }
-        button:hover { background-color: #218838; }
-    </style>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-
+<?php include '../HTML/navbar.php'; ?>
 <h2>Gestion des utilisateurs</h2>
 
 <table>
@@ -73,7 +55,6 @@ $groupes = $groupQuery->fetchAll(PDO::FETCH_ASSOC);
     <?php } ?>
 </table>
 
-<button id="retour" type="button">Retour à l'accueil</button>
 <script>
     document.getElementById('retour').addEventListener('click', function () {
         window.location.href = '../HTML/dashboard.php';

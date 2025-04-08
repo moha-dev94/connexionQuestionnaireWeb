@@ -1,4 +1,0 @@
-ID Question: 2 | Réponse utilisateur: canberra | Bonne réponse: canberra | Score attribué: 1
-ID Question: 3 | Réponse utilisateur: léonard de vinci | Bonne réponse: léonard de vinci | Score attribué: 1
-ID Question: 4 | Réponse utilisateur: faux | Bonne réponse: vrai | Score attribué: 0
-ID Question: 15 | Réponse utilisateur: vrai | Bonne réponse: vrai | Score attribué: 1

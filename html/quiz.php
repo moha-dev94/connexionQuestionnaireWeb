@@ -71,7 +71,7 @@ $_SESSION['questionnaire_id'] = $questionnaireID; // Stocke l'ID du questionnair
             document.getElementById('question-title').innerText = questionData.Libelle;
 
             let answersHTML = "";
-            if (questionData.VraiFaux !== null && questionData.VraiFaux !== "") {
+            if (parseInt(questionData.VraiFaux) === 1 || parseInt(questionData.FauxVrai) === 1) {
                 answersHTML = `
                     <label>
                         <input type="radio" name="answer" value="Vrai" onclick="enableNextButton()"> Vrai

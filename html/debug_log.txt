@@ -1,0 +1,16 @@
+ID Question: 2 | Réponse utilisateur: canberra | Bonne réponse: canberra | Score attribué: 1
+ID Question: 3 | Réponse utilisateur: léonard de vinci | Bonne réponse: léonard de vinci | Score attribué: 1
+ID Question: 4 | Réponse utilisateur: vrai | Bonne réponse: vrai | Score attribué: 1
+ID Question: 15 | Réponse utilisateur: vrai | Bonne réponse: vrai | Score attribué: 1
+ID Question: 16 | Réponse utilisateur: vrai | Bonne réponse: vrai | Score attribué: 1
+ID Question: 16 | Réponse utilisateur: vrai | Bonne réponse: vrai | Score attribué: 1
+ID Question: 2 | Réponse utilisateur: canberra | Bonne réponse: canberra | Score attribué: 1
+ID Question: 3 | Réponse utilisateur: léonard de vinci | Bonne réponse: léonard de vinci | Score attribué: 1
+ID Question: 4 | Réponse utilisateur: vrai | Bonne réponse: vrai | Score attribué: 1
+ID Question: 15 | Réponse utilisateur: vrai | Bonne réponse: vrai | Score attribué: 1
+ID Question: 5 | Réponse utilisateur: swift | Bonne réponse: java | Score attribué: 0
+ID Question: 6 | Réponse utilisateur: hyper transfer machine language | Bonne réponse: hypertext markup language | Score attribué: 0
+ID Question: 7 | Réponse utilisateur: vrai | Bonne réponse: faux | Score attribué: 0
+ID Question: 17 | Réponse utilisateur: gérer une base de données | Bonne réponse: faux | Score attribué: 0
+ID Question: 18 | Réponse utilisateur: styliser une page | Bonne réponse: faux | Score attribué: 0
+ID Question: 19 | Réponse utilisateur: mdr | Bonne réponse: faux | Score attribué: 0

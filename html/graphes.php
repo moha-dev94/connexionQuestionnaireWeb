@@ -54,9 +54,9 @@ $jsonData = json_encode($data);
 
 <script>
 // Données issues du PHP
-const dataFromPHP = <?php echo $jsonData; ?>;
-const dates = dataFromPHP.map(entry => entry.DateParticipation);
-const scores = dataFromPHP.map(entry => entry.Score);
+const dataPHP = <?php echo $jsonData; ?>;
+const dates = dataPHP.map(entry => entry.DateParticipation);
+const scores = dataPHP.map(entry => entry.Score);
 
 // Création du graphique
 const ctx = document.getElementById('grapheScore').getContext('2d');
